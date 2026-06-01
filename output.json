@@ -1,0 +1,44 @@
+[
+  {
+    "output": "# One-Day Meal Plan for Marathon Training Carb-Loading\n\nHere is a one-day meal plan for an athlete preparing for marathon race day with carb-loading:\n\n* **Calorie Target:** Approximately 3,200 calories\n* **Macronutrient Breakdown:** Protein (120g), Fat (85g), Carbs (480g)\n\n**Meal Plan:**\n\n* **Breakfast (7:00 AM):** Oatmeal (100g dry weight) with honey (30g), banana (150g), and whole milk (240g). 2 slices whole wheat toast (60g) with almond butter (20g).\n  * Protein: 18g, Fat: 12g, Carbs: 110g\n\n* **Mid-Morning Snack (10:00 AM):** Rice cakes (50g) with peanut butter (25g) and jam (30g). Orange juice (250ml).\n  * Protein: 8g, Fat: 10g, Carbs: 65g\n\n* **Lunch (1:00 PM):** Grilled chicken breast (130g) with white rice (150g cooked), steamed carrots (100g), and olive oil (10ml). Side of whole wheat roll (50g).\n  * Protein: 38g, Fat: 12g, Carbs: 85g\n\n* **Afternoon Snack (4:00 PM):** Sports drink (500ml with carbohydrates) and granola bar (50g).\n  * Protein: 6g, Fat: 8g, Carbs: 95g\n\n* **Dinner (7:00 PM):** Baked salmon (120g) with sweet potato (250g baked), steamed green beans (150g), and canola oil (10ml).\n  * Protein: 30g, Fat: 18g, Carbs: 65g\n\n* **Evening Snack (9:30 PM):** Pasta (80g dry weight) with marinara sauce (100g) and 1% milk (240ml).\n  * Protein: 20g, Fat: 15g, Carbs: 60g\n\nThis carb-loading meal plan emphasizes complex carbohydrates and moderate protein to fuel endurance training while supporting muscle recovery and glycogen storage for optimal marathon performance.",
+    "test_case": {
+      "prompt_inputs": {
+        "height": "178",
+        "weight": "68",
+        "goal": "Marathon training with carb-loading for race day preparation",
+        "restrictions": "None"
+      },
+      "solution_criteria": [
+        "Meal plan covers all meals for one full day with timing around training sessions",
+        "Macronutrient ratio emphasizes carbohydrates (55-65%) appropriate for endurance athlete with adequate protein (1.2-1.6g/kg) and fat",
+        "Total daily caloric intake aligns with high-endurance athlete needs (approximately 2,800-3,200 calories)",
+        "Includes specific meal timing recommendations relative to training/recovery windows"
+      ],
+      "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+      "scenario": "Testing with a high-endurance athlete (marathon runner) requiring high caloric intake and carb-loading focus, with specific macronutrient ratios and timing around training sessions"
+    },
+    "score": 7,
+    "reasoning": "The solution meets all three mandatory requirements with specific daily caloric total, complete macronutrient breakdown, and detailed meals with portions and timing. The macronutrient ratios appropriately emphasize carbohydrates for an endurance athlete and protein intake exceeds the minimum guideline. However, the solution has a notable weakness: it fails to explicitly address training session timing, which is a key criterion stating 'timing around training sessions.' The meal plan appears generic without reference to when the athlete actually trains, making it impossible to verify if meals are optimally positioned for pre/post-workout nutrition windows. Additionally, there's a minor arithmetic discrepancy in the fat totals. Despite these issues, the core mandatory requirements are satisfied."
+  },
+  {
+    "output": "# One-Day Meal Plan for Vegetarian Weightlifter\n\nHere is a one-day meal plan for an athlete aiming to build muscle and increase strength for weightlifting competition:\n\n* **Calorie Target:** Approximately 3200 calories\n* **Macronutrient Breakdown:** Protein (160g), Fat (95g), Carbs (420g)\n\n## Meal Plan:\n\n* **Breakfast (7:00 AM):** Scrambled eggs (3 whole eggs, 150g) with whole wheat toast (80g) and butter (15g). Orange juice (250ml).\n    * Protein: 22g, Fat: 18g, Carbs: 45g\n\n* **Mid-Morning Snack (10:00 AM):** Greek yogurt (200g, plain full-fat) with granola (40g) and honey (20g).\n    * Protein: 18g, Fat: 8g, Carbs: 52g\n\n* **Lunch (1:00 PM):** Cheese and vegetable sandwich with whole wheat bread (100g), cheddar cheese (60g), lettuce (30g), tomato (50g), and mayonnaise (20g). Side of sweet potato (180g, baked).\n    * Protein: 28g, Fat: 22g, Carbs: 78g\n\n* **Pre-Workout Snack (3:30 PM):** Banana (150g) with peanut butter (30g).\n    * Protein: 8g, Fat: 16g, Carbs: 35g\n\n* **Dinner (7:00 PM):** Cottage cheese (250g, full-fat) mixed with spinach (80g), mushrooms (100g saut\u00e9ed in 10g olive oil), and brown rice (100g cooked).\n    * Protein: 50g, Fat: 18g, Carbs: 60g\n\n* **Evening Snack (9:30 PM):** Whole milk (240ml) with almonds (25g).\n    * Protein: 16g, Fat: 13g, Carbs: 12g\n\nThis meal plan emphasizes high-protein vegetarian sources (eggs, dairy products, nuts), complex carbohydrates for energy and recovery, and healthy fats to support hormone production and muscle growth\u2014all essential for strength training goals.",
+    "test_case": {
+      "prompt_inputs": {
+        "height": "178 cm",
+        "weight": "82 kg",
+        "goal": "Build muscle and increase strength for weightlifting competition",
+        "restrictions": "Vegetarian, dislikes legumes and tofu, prefers simple foods"
+      },
+      "solution_criteria": [
+        "Meal plan covers full day with timing around gym session",
+        "Meets minimum 120g protein daily using vegetarian sources excluding legumes/tofu",
+        "All meals use only 3-4 ingredients maximum for simplicity",
+        "Includes specific meal times and portion sizes"
+      ],
+      "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+      "scenario": "Testing with a strength/power athlete (weightlifter) with dietary restrictions (vegetarian) and limited food preferences, requiring compact protein sources and meal timing around gym sessions"
+    },
+    "score": 6,
+    "reasoning": "The solution successfully meets all three mandatory requirements with comprehensive nutritional data, adequate protein from vegetarian sources, and detailed meal timing. However, it fails to fully satisfy the secondary criterion requiring all meals to use only 3-4 ingredients maximum for simplicity. The lunch sandwich contains 5 distinct ingredients, and the dinner preparation involves multiple components that conflict with the stated preference for simple foods. While the nutritional targets are appropriate for the athlete's goals, the ingredient count violations represent a clear deviation from the specified criteria."
+  }
+]

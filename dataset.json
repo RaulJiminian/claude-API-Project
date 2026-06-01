@@ -1,0 +1,34 @@
+[
+  {
+    "prompt_inputs": {
+      "height": "178",
+      "weight": "68",
+      "goal": "Marathon training with carb-loading for race day preparation",
+      "restrictions": "None"
+    },
+    "solution_criteria": [
+      "Meal plan covers all meals for one full day with timing around training sessions",
+      "Macronutrient ratio emphasizes carbohydrates (55-65%) appropriate for endurance athlete with adequate protein (1.2-1.6g/kg) and fat",
+      "Total daily caloric intake aligns with high-endurance athlete needs (approximately 2,800-3,200 calories)",
+      "Includes specific meal timing recommendations relative to training/recovery windows"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a high-endurance athlete (marathon runner) requiring high caloric intake and carb-loading focus, with specific macronutrient ratios and timing around training sessions"
+  },
+  {
+    "prompt_inputs": {
+      "height": "178 cm",
+      "weight": "82 kg",
+      "goal": "Build muscle and increase strength for weightlifting competition",
+      "restrictions": "Vegetarian, dislikes legumes and tofu, prefers simple foods"
+    },
+    "solution_criteria": [
+      "Meal plan covers full day with timing around gym session",
+      "Meets minimum 120g protein daily using vegetarian sources excluding legumes/tofu",
+      "All meals use only 3-4 ingredients maximum for simplicity",
+      "Includes specific meal times and portion sizes"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a strength/power athlete (weightlifter) with dietary restrictions (vegetarian) and limited food preferences, requiring compact protein sources and meal timing around gym sessions"
+  }
+]

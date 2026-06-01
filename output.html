@@ -1,0 +1,218 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Prompt Evaluation Report</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                margin: 0;
+                padding: 20px;
+                color: #333;
+            }
+            .header {
+                background-color: #f0f0f0;
+                padding: 20px;
+                border-radius: 5px;
+                margin-bottom: 20px;
+            }
+            .summary-stats {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+            .stat-box {
+                background-color: #fff;
+                border-radius: 5px;
+                padding: 15px;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+                flex-basis: 30%;
+                min-width: 200px;
+            }
+            .stat-value {
+                font-size: 24px;
+                font-weight: bold;
+                margin-top: 5px;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 20px;
+            }
+            th {
+                background-color: #4a4a4a;
+                color: white;
+                text-align: left;
+                padding: 12px;
+            }
+            td {
+                padding: 10px;
+                border-bottom: 1px solid #ddd;
+                vertical-align: top;
+            }
+            tr:nth-child(even) {
+                background-color: #f9f9f9;
+            }
+            .output-cell {
+                white-space: pre-wrap;
+            }
+            .score {
+                font-weight: bold;
+                padding: 5px 10px;
+                border-radius: 3px;
+                display: inline-block;
+            }
+            .score-high {
+                background-color: #c8e6c9;
+                color: #2e7d32;
+            }
+            .score-medium {
+                background-color: #fff9c4;
+                color: #f57f17;
+            }
+            .score-low {
+                background-color: #ffcdd2;
+                color: #c62828;
+            }
+            .output {
+                overflow: auto;
+                white-space: pre-wrap;
+            }
+
+            .output pre {
+                background-color: #f5f5f5;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                padding: 10px;
+                margin: 0;
+                font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+                font-size: 14px;
+                line-height: 1.4;
+                color: #333;
+                box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+                overflow-x: auto;
+                white-space: pre-wrap; 
+                word-wrap: break-word; 
+            }
+
+            td {
+                width: 20%;
+            }
+            .score-col {
+                width: 80px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Prompt Evaluation Report</h1>
+            <div class="summary-stats">
+                <div class="stat-box">
+                    <div>Total Test Cases</div>
+                    <div class="stat-value">2</div>
+                </div>
+                <div class="stat-box">
+                    <div>Average Score</div>
+                    <div class="stat-value">6.5 / 10</div>
+                </div>
+                <div class="stat-box">
+                    <div>Pass Rate (≥7)</div>
+                    <div class="stat-value">50.0%</div>
+                </div>
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Scenario</th>
+                    <th>Prompt Inputs</th>
+                    <th>Solution Criteria</th>
+                    <th>Output</th>
+                    <th>Score</th>
+                    <th>Reasoning</th>
+                </tr>
+            </thead>
+            <tbody>
+    
+            <tr>
+                <td>Testing with a high-endurance athlete (marathon runner) requiring high caloric intake and carb-loading focus, with specific macronutrient ratios and timing around training sessions</td>
+                <td class="prompt-inputs"><strong>height:</strong> 178<br><strong>weight:</strong> 68<br><strong>goal:</strong> Marathon training with carb-loading for race day preparation<br><strong>restrictions:</strong> None</td>
+                <td class="criteria">• Meal plan covers all meals for one full day with timing around training sessions<br>• Macronutrient ratio emphasizes carbohydrates (55-65%) appropriate for endurance athlete with adequate protein (1.2-1.6g/kg) and fat<br>• Total daily caloric intake aligns with high-endurance athlete needs (approximately 2,800-3,200 calories)<br>• Includes specific meal timing recommendations relative to training/recovery windows</td>
+                <td class="output"><pre># One-Day Meal Plan for Marathon Training Carb-Loading
+
+Here is a one-day meal plan for an athlete preparing for marathon race day with carb-loading:
+
+* **Calorie Target:** Approximately 3,200 calories
+* **Macronutrient Breakdown:** Protein (120g), Fat (85g), Carbs (480g)
+
+**Meal Plan:**
+
+* **Breakfast (7:00 AM):** Oatmeal (100g dry weight) with honey (30g), banana (150g), and whole milk (240g). 2 slices whole wheat toast (60g) with almond butter (20g).
+  * Protein: 18g, Fat: 12g, Carbs: 110g
+
+* **Mid-Morning Snack (10:00 AM):** Rice cakes (50g) with peanut butter (25g) and jam (30g). Orange juice (250ml).
+  * Protein: 8g, Fat: 10g, Carbs: 65g
+
+* **Lunch (1:00 PM):** Grilled chicken breast (130g) with white rice (150g cooked), steamed carrots (100g), and olive oil (10ml). Side of whole wheat roll (50g).
+  * Protein: 38g, Fat: 12g, Carbs: 85g
+
+* **Afternoon Snack (4:00 PM):** Sports drink (500ml with carbohydrates) and granola bar (50g).
+  * Protein: 6g, Fat: 8g, Carbs: 95g
+
+* **Dinner (7:00 PM):** Baked salmon (120g) with sweet potato (250g baked), steamed green beans (150g), and canola oil (10ml).
+  * Protein: 30g, Fat: 18g, Carbs: 65g
+
+* **Evening Snack (9:30 PM):** Pasta (80g dry weight) with marinara sauce (100g) and 1% milk (240ml).
+  * Protein: 20g, Fat: 15g, Carbs: 60g
+
+This carb-loading meal plan emphasizes complex carbohydrates and moderate protein to fuel endurance training while supporting muscle recovery and glycogen storage for optimal marathon performance.</pre></td>
+                <td class="score-col"><span class="score score-medium">7</span></td>
+                <td class="reasoning">The solution meets all three mandatory requirements with specific daily caloric total, complete macronutrient breakdown, and detailed meals with portions and timing. The macronutrient ratios appropriately emphasize carbohydrates for an endurance athlete and protein intake exceeds the minimum guideline. However, the solution has a notable weakness: it fails to explicitly address training session timing, which is a key criterion stating 'timing around training sessions.' The meal plan appears generic without reference to when the athlete actually trains, making it impossible to verify if meals are optimally positioned for pre/post-workout nutrition windows. Additionally, there's a minor arithmetic discrepancy in the fat totals. Despite these issues, the core mandatory requirements are satisfied.</td>
+            </tr>
+        
+            <tr>
+                <td>Testing with a strength/power athlete (weightlifter) with dietary restrictions (vegetarian) and limited food preferences, requiring compact protein sources and meal timing around gym sessions</td>
+                <td class="prompt-inputs"><strong>height:</strong> 178 cm<br><strong>weight:</strong> 82 kg<br><strong>goal:</strong> Build muscle and increase strength for weightlifting competition<br><strong>restrictions:</strong> Vegetarian, dislikes legumes and tofu, prefers simple foods</td>
+                <td class="criteria">• Meal plan covers full day with timing around gym session<br>• Meets minimum 120g protein daily using vegetarian sources excluding legumes/tofu<br>• All meals use only 3-4 ingredients maximum for simplicity<br>• Includes specific meal times and portion sizes</td>
+                <td class="output"><pre># One-Day Meal Plan for Vegetarian Weightlifter
+
+Here is a one-day meal plan for an athlete aiming to build muscle and increase strength for weightlifting competition:
+
+* **Calorie Target:** Approximately 3200 calories
+* **Macronutrient Breakdown:** Protein (160g), Fat (95g), Carbs (420g)
+
+## Meal Plan:
+
+* **Breakfast (7:00 AM):** Scrambled eggs (3 whole eggs, 150g) with whole wheat toast (80g) and butter (15g). Orange juice (250ml).
+    * Protein: 22g, Fat: 18g, Carbs: 45g
+
+* **Mid-Morning Snack (10:00 AM):** Greek yogurt (200g, plain full-fat) with granola (40g) and honey (20g).
+    * Protein: 18g, Fat: 8g, Carbs: 52g
+
+* **Lunch (1:00 PM):** Cheese and vegetable sandwich with whole wheat bread (100g), cheddar cheese (60g), lettuce (30g), tomato (50g), and mayonnaise (20g). Side of sweet potato (180g, baked).
+    * Protein: 28g, Fat: 22g, Carbs: 78g
+
+* **Pre-Workout Snack (3:30 PM):** Banana (150g) with peanut butter (30g).
+    * Protein: 8g, Fat: 16g, Carbs: 35g
+
+* **Dinner (7:00 PM):** Cottage cheese (250g, full-fat) mixed with spinach (80g), mushrooms (100g sautéed in 10g olive oil), and brown rice (100g cooked).
+    * Protein: 50g, Fat: 18g, Carbs: 60g
+
+* **Evening Snack (9:30 PM):** Whole milk (240ml) with almonds (25g).
+    * Protein: 16g, Fat: 13g, Carbs: 12g
+
+This meal plan emphasizes high-protein vegetarian sources (eggs, dairy products, nuts), complex carbohydrates for energy and recovery, and healthy fats to support hormone production and muscle growth—all essential for strength training goals.</pre></td>
+                <td class="score-col"><span class="score score-medium">6</span></td>
+                <td class="reasoning">The solution successfully meets all three mandatory requirements with comprehensive nutritional data, adequate protein from vegetarian sources, and detailed meal timing. However, it fails to fully satisfy the secondary criterion requiring all meals to use only 3-4 ingredients maximum for simplicity. The lunch sandwich contains 5 distinct ingredients, and the dinner preparation involves multiple components that conflict with the stated preference for simple foods. While the nutritional targets are appropriate for the athlete's goals, the ingredient count violations represent a clear deviation from the specified criteria.</td>
+            </tr>
+        
+            </tbody>
+        </table>
+    </body>
+    </html>
+    
