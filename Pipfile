@@ -8,6 +8,7 @@ jupyter = "*"
 ipykernel = "*"
 anthropic = "*"
 python-dotenv = "*"
+voyageai = "*"
 
 [dev-packages]
 
